@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"helloc8\startup_stm32f103xb.o"
+"helloc8\main.o"
+"helloc8\gpio.o"
+"helloc8\usart.o"
+"helloc8\stm32f1xx_it.o"
+"helloc8\stm32f1xx_hal_msp.o"
+"helloc8\stm32f1xx_hal_gpio_ex.o"
+"helloc8\stm32f1xx_hal_tim.o"
+"helloc8\stm32f1xx_hal_tim_ex.o"
+"helloc8\stm32f1xx_hal_uart.o"
+"helloc8\stm32f1xx_hal.o"
+"helloc8\stm32f1xx_hal_rcc.o"
+"helloc8\stm32f1xx_hal_rcc_ex.o"
+"helloc8\stm32f1xx_hal_gpio.o"
+"helloc8\stm32f1xx_hal_dma.o"
+"helloc8\stm32f1xx_hal_cortex.o"
+"helloc8\stm32f1xx_hal_pwr.o"
+"helloc8\stm32f1xx_hal_flash.o"
+"helloc8\stm32f1xx_hal_flash_ex.o"
+"helloc8\stm32f1xx_hal_exti.o"
+"helloc8\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "helloc8\helloc8.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "helloc8.map" -o helloc8\helloc8.axf
